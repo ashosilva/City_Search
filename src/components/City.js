@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-//import 'bootstrap/dist/css/bootstrap.css';
 import "./City"
 class City extends Component {
     constructor(props) {
@@ -36,7 +35,7 @@ class City extends Component {
     render() {
         let display;
         if(!this.state.zipcode.listZips) {
-            display = <p>Loading...</p>;
+            display = <p>0 results</p>;
         } else {
             display = (
                 <>
